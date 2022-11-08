@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Pricing</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/daf3632416.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-md-3">
+            <div class="card pointer">
+                <div class="card-body text-center">
+                    <div class="icon-title txt-red">
+                        <i class="fa-solid fa-anchor"></i>
+                    </div>
+                    <h4 class="text-title text-uppercase fw-bold mt-3">Private plan</h4>
+                    <div class="border-top my-3 text-muted"></div>
+                    <div class="my-4">
+                        <p class="text-description mb-1">Lifetime update</p>
+                        <p class="text-description mb-1">Daily rewards</p>
+                        <p class="text-description mb-1">Annually report</p>
+                    </div>
+                    <div class="border-top my-3 divider"></div>
+                    <div>
+                        <h4 class="txt-red fw-bold">IDR 950.000</h4>
+                        <p class="sub-price fw-bold">per month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card pointer">
+                <div class="card-body text-center">
+                    <div class="icon-title txt-blue">
+                        <i class="fa-brands fa-gitlab"></i>
+                    </div>
+                    <h4 class="text-title text-uppercase fw-bold mt-3">Catman plan</h4>
+                    <div class="border-top my-3 text-muted"></div>
+                    <div class="my-4">
+                        <p class="text-description mb-1">Lifetime update</p>
+                        <p class="text-description mb-1">Daily rewards</p>
+                        <p class="text-description mb-1">Annually report</p>
+                    </div>
+                    <div class="border-top my-3 divider"></div>
+                    <div>
+                        <h4 class="txt-blue fw-bold">IDR 950.000</h4>
+                        <p class="sub-price fw-bold">per month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card pointer">
+                <div class="card-body text-center">
+                    <div class="icon-title txt-yellow">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <h4 class="text-title text-uppercase fw-bold mt-3">Champ Plan</h4>
+                    <div class="border-top my-3 text-muted"></div>
+                    <div class="my-4">
+                        <p class="text-description mb-1">Lifetime update</p>
+                        <p class="text-description mb-1">Daily rewards</p>
+                        <p class="text-description mb-1">Annually report</p>
+                    </div>
+                    <div class="border-top my-3 divider"></div>
+                    <div>
+                        <h4 class="txt-yellow fw-bold">IDR 950.000</h4>
+                        <p class="sub-price fw-bold">per month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => card.addEventListener('click', event => {
+        cards.forEach(function(el){
+            el.classList.remove("active");
+        });
+        card.classList.add('active')
+    }));
+</script>
+</html>
